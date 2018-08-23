@@ -60,7 +60,7 @@ class Geocoder
         return $this;
     }
 
-    public function getCoordinatesForAddress(string $address): array
+    public function getCoordinatesForAddress(string $address, $includeAddressComponents = FALSE): array
     {
         if (empty($address)) {
             return $this->emptyResponse();
@@ -84,7 +84,13 @@ class Geocoder
             return $this->emptyResponse();
         }
 
-        return $this->formatResponse($geocodingResponse);
+        $response = $this->formatResponse($geocodingResponse);
+        if ($includeAddressComponents) {
+            $results = array_shift($geocodingResponse->results);
+            $response['address_components'] = $results->address_components;
+        }
+
+        return $response;
     }
 
     public function getAddressForCoordinates(float $lat, float $lng): array
