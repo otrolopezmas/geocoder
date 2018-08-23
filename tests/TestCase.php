@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Geocoder\Tests;
+namespace Otrolopezmas\Geocoder\Tests;
 
 use Dotenv\Dotenv;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;

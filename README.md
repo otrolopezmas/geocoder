@@ -48,7 +48,7 @@ In Laravel 5.5 the package will autoregister itself. In older versions of Larave
 // config/app.php
 'providers' => [
     '...',
-    Spatie\Geocoder\GeocoderServiceProvider::class
+    Otrolopezmas\Geocoder\GeocoderServiceProvider::class
 ];
 ```
 
@@ -56,14 +56,14 @@ In Laravel 5.5 the package will autoregister itself. In older versions of Larave
 // config/app.php
 'aliases' => array(
 	...
-	'Geocoder' => Spatie\Geocoder\Facades\Geocoder::class,
+	'Geocoder' => Otrolopezmas\Geocoder\Facades\Geocoder::class,
 )
 ```
 
 Next, you must publish the config file :
 
 ```bash
-php artisan vendor:publish --provider="Spatie\Geocoder\GeocoderServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Otrolopezmas\Geocoder\GeocoderServiceProvider" --tag="config"
 ```
 
 This is the content of the config file:

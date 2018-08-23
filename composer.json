@@ -1,7 +1,7 @@
 {
-    "name": "spatie/geocoder",
+    "name": "otrolopezmas/geocoder",
     "description": "Geocoding addresses to coordinates",
-    "homepage": "https://github.com/spatie/geocoder",
+    "homepage": "https://github.com/otrolopezmas/geocoder",
     "keywords":
         [
             "geocode",
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Geocoder\\": "src"
+            "Otrolopezmas\\Geocoder\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Geocoder\\Tests\\": "tests"
+            "Otrolopezmas\\Geocoder\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Geocoder\\GeocoderServiceProvider"
+                "Otrolopezmas\\Geocoder\\GeocoderServiceProvider"
             ],
             "aliases": {
-                "Geocoder": "Spatie\\Geocoder\\Facades\\Geocoder"
+                "Geocoder": "Otrolopezmas\\Geocoder\\Facades\\Geocoder"
             }
         }
     }

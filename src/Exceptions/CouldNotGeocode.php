@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Geocoder\Exceptions;
+namespace Otrolopezmas\Geocoder\Exceptions;
 
 use Exception;
 
