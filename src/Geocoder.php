@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Geocoder;
+namespace Otrolopezmas\Geocoder;
 
 use GuzzleHttp\Client;
-use Spatie\Geocoder\Exceptions\CouldNotGeocode;
+use Otrolopezmas\Geocoder\Exceptions\CouldNotGeocode;
 
 class Geocoder
 {

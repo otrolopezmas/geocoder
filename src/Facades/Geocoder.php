@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Geocoder\Facades;
+namespace Otrolopezmas\Geocoder\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

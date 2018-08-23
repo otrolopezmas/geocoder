@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Geocoder;
+namespace Otrolopezmas\Geocoder;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
